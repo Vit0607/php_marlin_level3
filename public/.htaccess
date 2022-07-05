@@ -1,0 +1,7 @@
+AddDefaultCharset UTF-8
+php_flag display_errors on
+php_value error_reporting -1;
+
+Options +Indexes
+RewriteEngine On
+RewriteRule ^ index.php [L]
