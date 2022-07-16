@@ -11,10 +11,10 @@ class QueryBuilder
     private $pdo;
     private $queryFactory;
 
-    public function __construct()
+    public function __construct(PDO $pdo)
     {
         // a PDO connection
-        $this->pdo = new PDO('mysql:host=localhost;dbname=php_marlin_test;charset=utf8;', 'root', '');
+        $this->pdo = $pdo;
         $this->queryFactory = new QueryFactory('mysql');
     }
 
